@@ -47,4 +47,4 @@ Instalaremos o Servidor RuskDesk
   
 **Obs: este comando ira fazer com que o serviço fique rodando e escutando as conexões**
 
-##Seja Feliz, Seja Livre e Use Linux
+**Seja Feliz, Seja Livre e Use Linux**
