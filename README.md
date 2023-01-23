@@ -51,7 +51,7 @@ Instalaremos o Servidor RuskDesk
   
 **Obs: este comando ira fazer com que o serviço fique rodando e escutando as conexões**
 
-## Instalação de Servidor RuskDesk
+## Instalação de RuskDesk como um serviço
 
 **Passo a passo**
 
