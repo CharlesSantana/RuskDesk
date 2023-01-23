@@ -45,6 +45,19 @@ Instalaremos o Servidor RuskDesk
 
   sudo hbbs -r 192.168.0.73:21115
   
+  e
+  
+  hbbr
+  
 **Obs: este comando ira fazer com que o serviço fique rodando e escutando as conexões**
+
+## Instalação de Servidor RuskDesk
+
+**Passo a passo**
+
+Instalaremos o RustDesk como um para rodar automaticamente ao iniciar o Servidor
+
+
+
 
 **Seja Feliz, Seja Livre e Use Linux**
