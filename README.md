@@ -57,6 +57,62 @@ Instalaremos o Servidor RuskDesk
 
 Instalaremos o RustDesk como um para rodar automaticamente ao iniciar o Servidor
 
+**1- Criando o arquivo de servico**
+
+sudo touch /etc/systemd/system/desk_hbbs.service
+
+sudo touch /etc/systemd/system/desk_hbbr.service
+
+**2- Dando permissão ao arquivos de serviço**
+
+sudo chmod 664 /etc/systemd/system/desk_hbbs.service
+
+sudo chmod 664 /etc/systemd/system/desk_hbbr.service
+
+**3- Editando e inserindo parametros no arquivo do serviço**
+
+  **abrir o arquivo do servico - desk_hbbs.service**
+ 
+sudo nano /etc/systemd/system/desk_hbbs.service
+
+  **inserir as informacoes no arquivo do servico - desk_hbbs.service**
+  
+[Unit]
+After=network.service
+[Service]
+ExecStart=hbbs
+[Install]
+WantedBy=default.target
+
+ **abrir o arquivo do servico - desk_hbbr.service**
+ 
+sudo nano /etc/systemd/system/desk_hbbr.service
+
+  **inserir as informacoes no arquivo do servico - desk_hbbs.service**
+  
+[Unit]
+After=network.service
+[Service]
+ExecStart=hbbr
+[Install]
+WantedBy=default.target
+
+**4- Habilitando os serviços**
+
+sudo systemctl daemon-reload
+
+sudo systemctl enable desk_hbbs
+
+sudo systemctl enable desk_hbbs
+
+
+
+**4- Startando os serviços**
+
+sudo systemctl start desk_hbbs
+
+sudo systemctl start desk_hbbs
+
 
 
 
