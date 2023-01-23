@@ -77,12 +77,12 @@ sudo nano /etc/systemd/system/desk_hbbs.service
 
   **inserir as informacoes no arquivo do servico - desk_hbbs.service**
   
-[Unit]
-After=network.service
-[Service]
-ExecStart=hbbs
-[Install]
-WantedBy=default.target
+[Unit]<br />
+After=network.service<br />
+[Service]<br />
+ExecStart=hbbs<br />
+[Install]<br />
+WantedBy=default.target<br />
 
  **abrir o arquivo do servico - desk_hbbr.service**
  
@@ -90,12 +90,12 @@ sudo nano /etc/systemd/system/desk_hbbr.service
 
   **inserir as informacoes no arquivo do servico - desk_hbbs.service**
   
-[Unit]
-After=network.service
-[Service]
-ExecStart=hbbr
-[Install]
-WantedBy=default.target
+[Unit]<br />
+After=network.service<br />
+[Service]<br />
+ExecStart=hbbr<br />
+[Install]<br />
+WantedBy=default.target<br />
 
 **4- Habilitando os serviços**
 
