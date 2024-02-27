@@ -1,6 +1,9 @@
 # RuskDesk
 
 Este programa código aberto ajuda os usuários a acessar e controlar seus computadores de qualquer local. Ele serve como cliente e servidor, portanto, não há necessidade de usar outros aplicativos de terceiros para usá-lo.
+Instale o seu servidor Ubuntu Server
+Instale o SSH na instalacao ou separadamente
+Mude a porta da conexão SSH de 22 para a que vc achar melhor e mais segura.
 
 
 ## Instalação de Servidor RuskDesk
@@ -38,6 +41,8 @@ Instalaremos o Servidor RuskDesk
   sudo ufw allow 8000/tcp
   
   sudo ufw allow 21116/udp
+
+  sudo ufw allow 2234/tcp - Esta é a minha porta do SSH
   
   sudo ufw enable
 
@@ -105,13 +110,16 @@ sudo systemctl enable desk_hbbs
 
 sudo systemctl enable desk_hbbs
 
-
-
 **4- Startando os serviços**
 
 sudo systemctl start desk_hbbs
 
 sudo systemctl start desk_hbbs
+
+sudo systemctl restart sshd
+
+sudo systemctl restart ssh
+
 
 
 
